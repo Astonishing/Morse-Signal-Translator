@@ -12,17 +12,17 @@
 
 ## Features
 
-- Translate **English → Morse**  
-- Translate **Morse → English**  
-- Clean and responsive UI  
-- Subtle animations and hover effects for better UX  
+- Translate **English → Morse**
+- Translate **Morse → English**
+- Clean and responsive UI
+- Subtle animations and hover effects for better UX
 
 ---
 
 ## Tech Stack
 
+- HTML/CSS
 
-HTML/CSS       // Structure and styling
-JavaScript     // Translation logic, DOM manipulation
-CSS Variables  // Theming and design consistency
+- JavaScript
 
+- CSS Variables
