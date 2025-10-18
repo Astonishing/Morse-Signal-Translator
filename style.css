@@ -1,0 +1,114 @@
+:root {
+  --bg: #f6f3ef;
+  --card: #ffffff;
+  --muted: #7b6f64;
+  --accent: #6b8a61;
+  --accent-2: #9aa88f;
+  --shadow: 0 8px 20px rgba(20,20,20,0.06);
+  --glass: rgba(255,255,255,0.6);
+  --radius: 12px;
+  --gap: 1rem;
+  --maxw: 720px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+
+/* Headings inside */
+h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-weight: 600;
+  font-family: "Georgia", serif;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  align-items: center;
+}
+
+.input, .output, input[type="text"] {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(95,85,78,0.12);
+  background: linear-gradient(180deg, var(--glass), rgba(255,255,255,0.95));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  font-size: 0.98rem;
+  color: #222;
+  outline: none;
+  transition: box-shadow .18s ease, transform .08s ease, border-color .12s ease;
+  margin-top: 0.35rem;
+}
+
+.input:focus, .output:focus, input[type="text"]:focus {
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(102,119,90,0.08);
+  transform: translateY(-1px);
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.52rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(95,85,78,0.08);
+  background: linear-gradient(180deg, #f8faf6, #f0f3ea);
+  font-weight: 700;
+  color: #2f3b2b;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .12s ease;
+  margin-top: 0.6rem;
+  box-shadow: 0 4px 12px rgba(40,42,38,0.05);
+}
+
+.button.primary {
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+  color: #fff;
+  border: none;
+  box-shadow: 0 6px 20px rgba(102,119,90,0.16);
+}
+
+.button:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(40,42,38,0.07); }
+.button:active { transform: translateY(0); box-shadow: 0 4px 10px rgba(40,42,38,0.05); }
+
+.controls {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
+}
+
+@media (min-width: 760px) {
+  .row.two-col {
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+  }
+  .container-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+.note {
+  margin-top: 0.9rem;
+  font-size: 0.86rem;
+  color: #8b8379;
+}
