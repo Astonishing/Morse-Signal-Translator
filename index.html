@@ -18,20 +18,26 @@
     h1 {
       border: 2px solid red;
       border-radius: 10px;
-      padding: 0.3rem 0.2rem; /* space between border and text */
-      margin: 0.75rem 0; /* vertical spacing around the heading */
+      padding: 0.3rem 0.2rem;
+      margin: 0.75rem 0;
+    }
+
+    .button {
+      margin: 10px;
+      margin-left: 240px;
     }
   </style>
+
   <body>
     <h1>Morse Signal Translator</h1>
 
     <div>
       <h2>English to Morse</h2>
-      Engish : <input type="text" class="input" />
+      Engish : <input type="text" class="input" id="eng-input" />
       <br />
-      <button style="margin: 10px; margin-left: 240px">Translate</button>
+      <button class="button" onclick="toMorse()">Translate</button>
       <br />
-      Output : <input type="text" class="output" />
+      Output : <input type="text" class="output" id="morse-output" />
     </div>
 
     <br />
@@ -39,11 +45,12 @@
 
     <div>
       <h2>Morse to English</h2>
-      Engish : <input type="text" class="input" />
+      Engish : <input type="text" class="input" id="morse-input" />
       <br />
-      <button style="margin: 10px; margin-left: 240px">Translate</button>
+      <button class="button" onclick="toEnglish()">Translate</button>
       <br />
-      Output : <input type="text" class="output" />
+      Output : <input type="text" class="output" id="eng-output" />
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
