@@ -15,7 +15,7 @@
 - Translate **English → Morse**
 - Translate **Morse → English**
 - Clean and responsive UI
-- Subtle animations and hover effects for better UX
+- Subtle animations and hover effects for better U/X
 
 ---
 
