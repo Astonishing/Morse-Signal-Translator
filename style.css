@@ -151,3 +151,33 @@ h2 {
   }
 }
 
+
+.translate-btn {
+  position: fixed;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, #2c2c2c, #1b1b1b);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.3s ease;
+  z-index: 999;
+}
+
+.translate-btn:hover {
+  transform: translateY(-50%) scale(1.07);
+  background: linear-gradient(180deg, #3b3b3b, #222);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+.translate-btn:active {
+  transform: translateY(-50%) scale(0.96);
+}
+
+

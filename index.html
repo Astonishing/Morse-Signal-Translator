@@ -3,35 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Morse Signal Translator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <link rel="stylesheet" href="style.css" />
 
   <body>
     <header>
       <h1>Morse Signal Translator</h1>
     </header>
 
-    <div>
+    <div class="container">
       <h2>English to Morse</h2>
-      Engish : <input type="text" class="input" id="eng-input" />
-      <br />
+      English:
+      <input type="text" class="input" id="eng-input" />
       <button class="button" onclick="toMorse()">Translate</button>
       <br />
-      Output : <input type="text" class="output" id="morse-output" />
+      Output:
+      <input type="text" class="output" id="morse-output" />
     </div>
 
-    <br />
-    <br />
+    <br /><br />
 
-    <div>
+    <div class="container">
       <h2>Morse to English</h2>
-      Morse : <input type="text" class="input" id="morse-input" />
-      <br />
+      Morse:
+      <input type="text" class="input" id="morse-input" />
       <button class="button" onclick="toEnglish()">Translate</button>
       <br />
-      Output : <input type="text" class="output" id="eng-output" />
+      Output:
+      <input type="text" class="output" id="eng-output" />
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
